@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <style>
+  /* General body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+
+  /* Header styling */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Section styling */
+  section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Form styling */
+  fieldset {
+    border: 2px solid #4CAF50;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  legend {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+
+  label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  input, select, button {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Footer styling */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+  }
+</style>
+</head>
+<body style="margin-inline:120px">
+  <!-- Header with site branding -->
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#announcements">Announcements</a></li>
+        <li><a href="#workshop">Workshop</a></li>
+        <li><a href="#form">Submit Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Announcements section -->
+  <main>
+    <section id="announcements">
+      <h2>Latest Announcements</h2>
+      <article>
+        <h3>Semester Registration</h3>
+        <p>Registration for the Spring semester closes on February 10th.</p>
+      </article>
+      <article>
+        <h3>Library Notice</h3>
+        <p>The library will remain open until 9 PM during exam week.</p>
+      </article>
+    </section>
+
+    <!-- Workshop section -->
+    <section id="workshop">
+      <h2>Upcoming Workshop</h2>
+      <p>Join our <strong>React Development Workshop</strong> on January 25th. Limited seats available!</p>
+    </section>
+
+    <!-- Form submission section -->
+    <section id="form">
+      <h2>Workshop Registration Form</h2>
+      <form action="/submit" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department"><br><br>
+          <option value="cs">Computer Science</option>
+          <option value="se">Software Engineering</option>
+          <option value="it">Information Technology</option>
+        </select><br><br>
+        <input type="date" name="" id="" pattern="\d{2}/\d{2}/\d{4}"><br>
+
+        <button type="submit" class="btn">Register</button><br>
+        <button type="submit" class="btn">Login</button><br>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Student Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
